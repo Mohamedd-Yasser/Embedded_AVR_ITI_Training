@@ -1,0 +1,5 @@
+#define SET_BIT(reg,bitN)   ((reg) |=(1<<bitN))
+#define CLR_BIT(reg,bitN)   ((reg) &= ~(1<<bitN))
+#define TOG_BIT(reg,bitN)   ((reg) ^=(1<<bitN))
+#define GET_BIT(reg,bitN)   (1 & ((reg)>>bitN))
+#define SET_PORT(reg,port)   ((reg) |= (port))
